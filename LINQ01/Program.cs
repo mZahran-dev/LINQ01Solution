@@ -33,6 +33,18 @@ namespace LINQ01
             #endregion
 
             #endregion
+
+            #region Part 02
+
+            #region 1.Sort a list of products by name
+            var products = ProductsList.OrderBy(P => P.ProductName);
+            foreach (var product in products)
+            {
+                Console.WriteLine(product);
+            } 
+            #endregion
+
+            #endregion
         }
     }
 }
