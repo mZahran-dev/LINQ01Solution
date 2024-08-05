@@ -64,12 +64,12 @@ namespace LINQ01
             #endregion
 
             #region 4.Sort a list of digits, first by length of their name, and then alphabetically by the name itself.
-            string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-            var SortedList = Arr.OrderBy(x => x.Length).ThenBy(N => N);
-            foreach (var sortedList in SortedList)
-            {
-                Console.WriteLine(sortedList);
-            }
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var SortedList = Arr.OrderBy(x => x.Length).ThenBy(N => N);
+            //foreach (var sortedList in SortedList)
+            //{
+            //    Console.WriteLine(sortedList);
+            //}
 
 
             #endregion
