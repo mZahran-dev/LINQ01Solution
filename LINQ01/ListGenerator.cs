@@ -7,8 +7,14 @@ using System.Xml.Linq;
 
 namespace LINQ01
 {
-
-	class Product : IComparable<Product>
+    public class CaseInsensitiveComparer : IComparer<string>
+    {
+        public int Compare(string x, string y)
+        {
+            return String.Compare(x, y, StringComparison.OrdinalIgnoreCase);
+        }
+    }
+    class Product : IComparable<Product>
 	{
 		public long ProductID { get; set; }
 		public string ProductName { get; set; }
@@ -72,7 +78,20 @@ namespace LINQ01
 	}
 	internal static class ListGenerator
 	{
-		public static List<Product> ProductsList { get; set; }
+        public static string[] SortArrayCaseInsensitive(string[] arr)
+        {
+            Array.Sort(arr, new CaseInsensitiveComparer());
+            return arr;
+        }
+        public static IEnumerable<string> SortWordsByLengthAndCaseInsensitive(string[] words)
+        {
+            return words.OrderBy(w => w.Length).ThenBy(w => w, new CaseInsensitiveComparer());
+        }
+        public static IEnumerable<string> SortWordsByLengthAndCaseInsensitiveDescending(string[] words)
+        {
+            return words.OrderBy(w => w.Length).ThenByDescending(w => w, new CaseInsensitiveComparer());
+        }
+        public static List<Product> ProductsList { get; set; }
 		public static List<Customer> CustomersList { get; set; }
 
 		static ListGenerator()
@@ -259,5 +278,7 @@ namespace LINQ01
 							 }).ToList();
 		}
 	}
+
+
 
 }
