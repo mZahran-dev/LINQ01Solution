@@ -24,12 +24,12 @@ namespace LINQ01
             #endregion
 
             #region 3.Returns digits whose name is shorter than their value.
-            string[] arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-            var shorterNameDigits = arr.Where((name,index) => name.Length < index).ToList();
-            foreach (var digit in shorterNameDigits)
-            {
-                Console.WriteLine(digit);
-            }
+            //string[] arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var shorterNameDigits = arr.Where((name,index) => name.Length < index).ToList();
+            //foreach (var digit in shorterNameDigits)
+            //{
+            //    Console.WriteLine(digit);
+            //}
             #endregion
 
             #endregion
