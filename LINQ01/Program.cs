@@ -45,13 +45,13 @@ namespace LINQ01
             #endregion
 
             #region 2.Uses a custom comparer to do a case-insensitive sort of the words in an array.
-            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
-            // we can make a class that implement the IComparer interface
-            string[] sortedArr = SortArrayCaseInsensitive(Arr);
-            foreach (var word in sortedArr)
-            {
-                Console.WriteLine(word);
-            }
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //// we can make a class that implement the IComparer interface
+            //string[] sortedArr = SortArrayCaseInsensitive(Arr);
+            //foreach (var word in sortedArr)
+            //{
+            //    Console.WriteLine(word);
+            //}
             #endregion
 
             #endregion
