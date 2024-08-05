@@ -94,12 +94,12 @@ namespace LINQ01
             #endregion
 
             #region 7.Sort first by word length and then by a case -insensitive descending sort of the words in an array.
-            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
-            var sortedArray = SortWordsByLengthAndCaseInsensitiveDescending(Arr);
-            foreach (string str in sortedArray)
-            {
-                Console.WriteLine(str);
-            } 
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //var sortedArray = SortWordsByLengthAndCaseInsensitiveDescending(Arr);
+            //foreach (string str in sortedArray)
+            //{
+            //    Console.WriteLine(str);
+            //} 
 
             #endregion
 
