@@ -9,7 +9,10 @@ namespace LINQ01
 {
     public class CaseInsensitiveComparer : IComparer<string>
     {
-
+        public int Compare(string x, string y)
+        {
+            return String.Compare(x, y, StringComparison.OrdinalIgnoreCase);
+        }
     }
     class Product : IComparable<Product>
 	{
