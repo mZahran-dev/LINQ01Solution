@@ -7,8 +7,11 @@ using System.Xml.Linq;
 
 namespace LINQ01
 {
+    public class CaseInsensitiveComparer : IComparer<string>
+    {
 
-	class Product : IComparable<Product>
+    }
+    class Product : IComparable<Product>
 	{
 		public long ProductID { get; set; }
 		public string ProductName { get; set; }
@@ -72,7 +75,7 @@ namespace LINQ01
 	}
 	internal static class ListGenerator
 	{
-		public static List<Product> ProductsList { get; set; }
+        public static List<Product> ProductsList { get; set; }
 		public static List<Customer> CustomersList { get; set; }
 
 		static ListGenerator()
@@ -259,5 +262,7 @@ namespace LINQ01
 							 }).ToList();
 		}
 	}
+
+
 
 }

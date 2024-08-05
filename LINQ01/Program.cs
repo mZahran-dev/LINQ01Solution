@@ -37,11 +37,17 @@ namespace LINQ01
             #region Part 02
 
             #region 1.Sort a list of products by name
-            var products = ProductsList.OrderBy(P => P.ProductName);
-            foreach (var product in products)
-            {
-                Console.WriteLine(product);
-            } 
+            //var products = ProductsList.OrderBy(P => P.ProductName);
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product);
+            //} 
+            #endregion
+
+            #region 2.Uses a custom comparer to do a case-insensitive sort of the words in an array.
+            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            // we can make a class that implement the IComparer interface
+
             #endregion
 
             #endregion
