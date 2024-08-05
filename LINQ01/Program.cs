@@ -56,11 +56,11 @@ namespace LINQ01
             #endregion
 
             #region 3.Sort a list of products by units in stock from highest to lowest.
-            var products = ProductsList.OrderByDescending(P => P.UnitsInStock);
-            foreach (var product in products)
-            {
-                Console.WriteLine(product);
-            }
+            //var products = ProductsList.OrderByDescending(P => P.UnitsInStock);
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
             #endregion
 
             #endregion
