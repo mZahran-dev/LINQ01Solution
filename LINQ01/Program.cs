@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using static LINQ01.ListGenerator;
 namespace LINQ01
 {
@@ -92,7 +93,18 @@ namespace LINQ01
 
             #endregion
 
+            #region 7.Sort first by word length and then by a case -insensitive descending sort of the words in an array.
+            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            var sortedArray = SortWordsByLengthAndCaseInsensitiveDescending(Arr);
+            foreach (string str in sortedArray)
+            {
+                Console.WriteLine(str);
+            } 
+
+            #endregion
+
+
             #endregion
         }
-    }
+        }
 }
