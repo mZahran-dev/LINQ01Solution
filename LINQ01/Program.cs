@@ -85,11 +85,11 @@ namespace LINQ01
 
 
             #region 6.Sort a list of products, first by category, and then by unit price, from highest to lowest.
-            var products = ProductsList.OrderByDescending(P => P.Category).ThenByDescending(P => P.UnitPrice);
-            foreach (var product in products)
-            {
-                Console.WriteLine(product);
-            }
+            //var products = ProductsList.OrderByDescending(P => P.Category).ThenByDescending(P => P.UnitPrice);
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product);
+            //}
 
             #endregion
 
