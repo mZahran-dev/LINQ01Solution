@@ -83,6 +83,10 @@ namespace LINQ01
             Array.Sort(arr, new CaseInsensitiveComparer());
             return arr;
         }
+        public static IEnumerable<string> SortWordsByLengthAndCaseInsensitive(string[] words)
+        {
+            return words.OrderBy(w => w.Length).ThenBy(w => w, new CaseInsensitiveComparer());
+        }
         public static List<Product> ProductsList { get; set; }
 		public static List<Customer> CustomersList { get; set; }
 
