@@ -1,4 +1,5 @@
-﻿using static LINQ01.ListGenerator;
+﻿using System.Runtime.InteropServices;
+using static LINQ01.ListGenerator;
 namespace LINQ01
 {
     internal class Program
@@ -52,6 +53,14 @@ namespace LINQ01
             //{
             //    Console.WriteLine(word);
             //}
+            #endregion
+
+            #region 3.Sort a list of products by units in stock from highest to lowest.
+            var products = ProductsList.OrderByDescending(P => P.UnitsInStock);
+            foreach (var product in products)
+            {
+                Console.WriteLine(product);
+            }
             #endregion
 
             #endregion
