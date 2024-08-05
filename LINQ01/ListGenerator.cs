@@ -78,6 +78,11 @@ namespace LINQ01
 	}
 	internal static class ListGenerator
 	{
+        public static string[] SortArrayCaseInsensitive(string[] arr)
+        {
+            Array.Sort(arr, new CaseInsensitiveComparer());
+            return arr;
+        }
         public static List<Product> ProductsList { get; set; }
 		public static List<Customer> CustomersList { get; set; }
 
